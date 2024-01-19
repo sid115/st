@@ -151,6 +151,42 @@ static unsigned int defaultattr = 11;
 static uint forcemousemod = ShiftMask;
 
 /*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+		{ "font",         STRING,  &font },
+		{ "color0",       STRING,  &color0 },
+		{ "color1",       STRING,  &color1 },
+		{ "color2",       STRING,  &color2 },
+		{ "color3",       STRING,  &color3 },
+		{ "color4",       STRING,  &color4 },
+		{ "color5",       STRING,  &color5 },
+		{ "color6",       STRING,  &color6 },
+		{ "color7",       STRING,  &color7 },
+		{ "color8",       STRING,  &color8 },
+		{ "color9",       STRING,  &color9 },
+		{ "color10",      STRING,  &color10 },
+		{ "color11",      STRING,  &color11 },
+		{ "color12",      STRING,  &color12 },
+		{ "color13",      STRING,  &color13 },
+		{ "color14",      STRING,  &color14 },
+		{ "color15",      STRING,  &color15 },
+		{ "background",   STRING,  &background },
+		{ "foreground",   STRING,  &foreground },
+		{ "cursorColor",  STRING,  &cursorColor },
+		{ "termname",     STRING,  &termname },
+		{ "shell",        STRING,  &shell },
+		{ "minlatency",   INTEGER, &minlatency },
+		{ "maxlatency",   INTEGER, &maxlatency },
+		{ "blinktimeout", INTEGER, &blinktimeout },
+		{ "bellvolume",   INTEGER, &bellvolume },
+		{ "tabspaces",    INTEGER, &tabspaces },
+		{ "borderpx",     INTEGER, &borderpx },
+		{ "cwscale",      FLOAT,   &cwscale },
+		{ "chscale",      FLOAT,   &chscale },
+};
+
+/*
  * Internal mouse shortcuts.
  * Beware that overloading Button1 will disable the selection.
  */
